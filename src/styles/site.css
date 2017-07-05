@@ -1,0 +1,35 @@
+body {
+  color: whitesmoke;
+  background-color: #393738;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  background-color: #f69047;
+  width: 100%; 
+  display: flex;
+}
+
+.logo {
+  margin-left: 50px;
+}
+
+.logo img {
+  width: 45px;
+}
+
+.pagetitle {
+  font-size: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: #f69047;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #59f6e1;
+}

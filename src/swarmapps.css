@@ -1,0 +1,66 @@
+.swarmapps {
+  list-style-type: none;
+  margin: 40px 0 0 0;
+  padding: 0;
+}
+
+.swarmapp {
+  width: 100%;
+  border: 2px solid #f69047;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+.swarmapp:hover {
+  background-color: rgba(246,144, 71, 0.1);
+}
+
+.appthumb {
+  height: 100%;
+}
+
+.appthumb img {
+  width: 200px;
+  height: 200px;
+  border: none;
+}
+
+.appinfo {
+  margin-left: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.apptitle {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.appdesc {
+  position: absolute;
+  bottom: 0;
+  max-height: 150px; 
+}
+
+.more-info {
+  margin-top: 20px;
+}
+
+.modal-header {
+  background-color: #393738;
+}
+
+.modal-body {
+  color: #393738;
+}
+
+button.close {
+  color: white;
+}
+
+slide img {
+  min-height: 60vh;
+  max-height: 70vh;
+}

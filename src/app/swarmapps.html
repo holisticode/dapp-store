@@ -1,0 +1,62 @@
+<h1 class="pagetitle">{{title}}</h1>
+<p>This page showcases applications running on <a href="http://swarm-gateways.net/:bzz/theswarm.eth">Swarm</a>, the decentralized P2P storage network.</p>
+<ul class="swarmapps">
+  <li *ngFor="let s_app of allSwarmApps">
+    <div class="swarmapp">
+      <div class="appthumb">
+        <img src="{{s_app.thumb}}"/>
+      </div>
+      <div class="appinfo">
+        <div class="appheader">
+          <div class="apptitle">
+            {{s_app.name}}
+          </div>
+          <div class="applink">
+            <a href="{{s_app.url}}">{{s_app.url}}</a>
+          </div>
+        </div>
+        <div class="appdesc">
+          <div class="shortDesc">
+            {{s_app.shortDesc}}
+          </div>
+          <div class="more-info" (click)="moreInfo(s_app)">
+            <a ng-click="moreInfo(s_app)">More info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<div bsModal #appDetailModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="appDetailModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Swarm App Details</h4>
+        <button type="button" class="close pull-right" (click)="appDetailModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h1 class="pagetitle">{{selectedApp.name}}</h1>
+        <carousel>
+          <slide *ngFor="let img of selectedApp.images">
+            <img src="{{img.img}}" alt="slide">
+            <div class="carousel-caption">
+              <h3>{{img.caption}}</h3>
+            </div>
+          </slide>
+        </carousel>
+        <div class="longDesc">
+          {{selectedApp.longDesc}}
+        </div>
+        <div class="codeRepo">
+         This app is hosted on the swarm network and can be used at: <a href="{{selectedApp.url}}">{{selectedApp.url}}</a>
+        </div>
+        <div class="codeRepo">
+          The code for this app is open-source and can be found at: <a href="{{selectedApp.repo}}">{{selectedApp.repo}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
