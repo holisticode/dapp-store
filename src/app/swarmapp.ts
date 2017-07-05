@@ -3,6 +3,7 @@ export class SwarmApp {
   name: string;
   thumb: string;
   shortDesc: string; 
+  longDesc: string; 
   categories: string[];
   repo: string;
   url: string;
