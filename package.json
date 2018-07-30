@@ -25,24 +25,26 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@angular/common": "~4.2.5",
-    "@angular/compiler": "~4.2.5",
-    "@angular/core": "~4.2.5",
-    "@angular/forms": "~4.2.5",
-    "@angular/http": "~4.2.5",
-    "@angular/platform-browser": "~4.2.5",
-    "@angular/platform-browser-dynamic": "~4.2.5",
-    "@angular/router": "~4.2.5",
-    "angular-in-memory-web-api": "~0.3.0",
+    "@angular/common": "~6.1.0",
+    "@angular/compiler": "~6.1.0",
+    "@angular/core": "~6.1.0",
+    "@angular/forms": "~6.1.0",
+    "@angular/http": "~6.1.0",
+    "@angular/platform-browser": "~6.1.0",
+    "@angular/platform-browser-dynamic": "~6.1.0",
+    "@angular/router": "~6.1.0",
+    "angular-in-memory-web-api": "^0.6.1",
     "core-js": "^2.4.1",
-    "ngx-bootstrap": "^1.7.1",
-    "rxjs": "5.0.1",
+    "ngx-bootstrap": "^3.0.1",
+    "rxjs": "6.2.2",
     "systemjs": "0.19.40",
-    "zone.js": "^0.8.4"
+    "zone.js": "^0.8.26",
+    "rxjs-compat": "^6.0.0-rc.0"
   },
   "devDependencies": {
-    "@angular/cli": "^1.2.0",
-    "@angular/compiler-cli": "^4.2.5",
+    "@angular-devkit/build-angular": "~0.7.0",
+    "@angular/cli": "^6.1.1",
+    "@angular/compiler-cli": "^6.1.0",
     "@types/jasmine": "2.5.36",
     "@types/node": "^6.0.46",
     "canonical-path": "0.0.2",
@@ -58,7 +60,7 @@
     "protractor": "~4.0.14",
     "rimraf": "^2.5.4",
     "tslint": "^3.15.1",
-    "typescript": "~2.1.0"
+    "typescript": "^2.9.2"
   },
   "repository": {}
 }

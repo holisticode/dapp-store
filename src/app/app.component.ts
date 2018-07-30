@@ -45,6 +45,20 @@ const ALLAPPS: SwarmApp[] = [
         {img: "img/explorer2.jpg", caption:"Create new folder"},
         {img: "img/explorer3.jpg", caption:"Internationalization"},
    ]
+  },
+  { id: 41, 
+    name: "ENS Updater", 
+    thumb: "img/ensupdater-thumb.jpg", 
+    shortDesc: "A tool for updating ENS entries",
+    longDesc: "",
+    categories: ["ens", "tools", "swarm"],
+    repo: "https://github.com/ethereum/swarm-dapps/tree/master/examples/filemanager",
+    url: "/bzz:/swarm-ens.eth/",
+    images: [
+        { img: "img/ens-updater1.jpg", caption: "Using the ENS updater" },
+        { img: "img/ens-updater2.jpg", caption: "Incorrect name" },
+        { img: "img/ens-updater3.jpg", caption: "Updated successfully" },
+    ]
   }
 ]
 
